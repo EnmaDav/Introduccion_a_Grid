@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #ff0000;
+    text-align: center;
+}
+a {
+    color: green;
+}
+a:hover {
+    color: yellow;
+}
+.paragrafo {
+    background-color: lightblue;
+    color: blue;
+}
+#lista-ordenada {
+    color: purple;
+    border-style: solid;
+}
+#lista-desordenada {
+    color: brown;
+    border-style: dotted;
+}
+#contenido {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 20px;
+    border: 2px solid black; 
+    border-radius: 10px;    
+    padding: 20px;    
+}
+#imagen {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border: 2px solid black; 
+    border-radius: 10px;    
+    padding: 20px;    
+}
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* imagen izquierda, texto derecha */
+    gap: 40px;
+    padding: 40px;
+}
