@@ -1,3 +1,4 @@
+/* Base style for mobile devices */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -55,14 +56,14 @@ a:hover {
     display: grid;
     grid-template-columns: 2fr;
     gap: 20px;
-    border: 2px solid black; 
+    border: 2px solid black;
     border-radius: 10px;    
     padding: 20px;        
     box-shadow: 0 4px 16px lightslategrey;
 }
 #contenido:hover {
-    background-color: #b3e5fc; 
-    transition: all 0.3s ease; 
+    background-color: #b3e5fc;
+    transition: all 0.3s ease;
     box-shadow: none;
 }
 #imagen {
@@ -70,7 +71,7 @@ a:hover {
     flex-direction: column;
     grid-template-columns: 1fr;
     gap: 20px;
-    border: 2px solid black; 
+    border: 2px solid black;
     border-radius: 10px;    
     padding: 20px;    
     box-shadow: 0 4px 16px lightslategrey;
@@ -79,13 +80,218 @@ a:hover {
     margin-top: auto;
 }
 #imagen:hover {
-    background-color: #e0f7fa; 
-    transition: all 0.3s ease; 
+    background-color: #e0f7fa;
+    transition: all 0.3s ease;
     box-shadow: none;
 }
 #main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     padding: 40px;
+}
+#main-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+        padding: 10px;
+}
+#contenido, #imagen {
+     padding: 10px;
+     margin: 0;
+}
+img {
+     max-width: 100%;
+     height: auto;
+ }
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1 {
+    font-family: 'pacifico', cursive;
+    color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+}
+h1:hover {
+    color: darkred;
+}
+#negrita {
+    font-weight: bold;
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: lightblue;
+}
+.paragrafo {
+    font-family: 'indie flower', cursive;
+    border: black 2px solid;
+    padding: 10px;
+    color: black;
+}
+.paragrafo:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#lista-ordenada {
+    color: black;
+    border-style: solid;
+    padding: 40px;
+}
+#lista-ordenada:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#lista-desordenada {
+    color: black;
+    border-style: dotted;
+    padding: 40px;
+}
+#lista-desordenada:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#contenido {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    padding: 20px;        
+    box-shadow: 0 4px 16px lightslategrey;
+}
+#contenido:hover {
+    background-color: #b3e5fc;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+#imagen {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    padding: 20px;    
+    box-shadow: 0 4px 16px lightslategrey;
+}
+#imagen a {
+    margin-top: auto;
+}
+#imagen:hover {
+    background-color: #e0f7fa;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+#main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1 {
+    font-family: 'pacifico', cursive;
+    color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+}
+h1:hover {
+    color: darkred;
+}
+#negrita {
+    font-weight: bold;
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: lightblue;
+}
+.paragrafo {
+    font-family: 'indie flower', cursive;
+    border: black 2px solid;
+    padding: 10px;
+    color: black;
+}
+.paragrafo:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#lista-ordenada {
+    color: black;
+    border-style: solid;
+    padding: 40px;
+}
+#lista-ordenada:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#lista-desordenada {
+    color: black;
+    border-style: dotted;
+    padding: 40px;
+}
+#lista-desordenada:hover {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+#contenido {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    padding: 20px;        
+    box-shadow: 0 4px 16px lightslategrey;
+}
+#contenido:hover {
+    background-color: #b3e5fc;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+#imagen {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    padding: 20px;    
+    box-shadow: 0 4px 16px lightslategrey;
+}
+#imagen a {
+    margin-top: auto;
+}
+#imagen:hover {
+    background-color: #e0f7fa;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+#main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
 }
